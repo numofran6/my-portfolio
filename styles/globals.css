@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.heroButton {
+		@apply text-gray-400 tracking-widest uppercase m-1.5 block transition-all ease-in-out duration-300 hover:scale-150 active:text-gray-100 hover:text-[#ce8e04];
+	}
+
+	.head {
+		@apply absolute top-20 uppercase tracking-[20px] text-gray-400 text-2xl font-bold;
+	}
+
+	.pagelayout {
+		@apply h-screen relative flex flex-col text-center sm:text-left sm:flex-row max-w-7xl px-10 items-center justify-evenly mx-auto;
+	}
+
+	.contactInput {
+		@apply outline-none focus:bg-slate-400/10 rounded-sm border-b border-[#242424] px-6 py-4 bg-gray-700 placeholder-gray-500 transition-all focus:border-[#ce8e04] focus:text-[#ce8e04];
+	}
+}
