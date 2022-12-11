@@ -52,7 +52,7 @@ function Hero({}: Props) {
 							<Cursor cursorColor="#ce8e04" />
 						</div>
 
-						<div className="z-10 flex flex-col items-center text-2xl lg:mt-10 lg:space-y-2">
+						<div className="z-10 mt-3 sm:mt-0 flex flex-col items-center text-2xl lg:mt-10 lg:space-y-2">
 							<Link href="/projects">
 								<button className="heroButton">Projects</button>
 							</Link>
