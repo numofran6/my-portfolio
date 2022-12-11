@@ -39,7 +39,7 @@ function Hero({}: Props) {
 							priority
 						/>
 
-						<h1 className="uppercase text-center font-bold text-2xl lg:text-6xl tracking-[5px] px-10 text-gray-300 lg:text-white">
+						<h1 className="uppercase text-center font-bold text-2xl lg:text-6xl tracking-[5px] px-10 text-gray-300 lg:text-white hidden sm:block">
 							My Portfolio
 						</h1>
 
@@ -47,7 +47,7 @@ function Hero({}: Props) {
 							Software Engineer
 						</h1>
 
-						<div className="lg:text-3xl text-2xl font-semibold m-3 flex justify-center items-center mb-3 sm:mb-0">
+						<div className="lg:text-3xl text-2xl font-semibold m-3 flex justify-center items-center">
 							<span className="text-white">{text}</span>
 							<Cursor cursorColor="#ce8e04" />
 						</div>
