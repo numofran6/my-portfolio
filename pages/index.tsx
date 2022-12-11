@@ -29,10 +29,6 @@ export default function Home() {
 			<section id="contact-me" className="snap-center">
 				<ContactMe />
 			</section>
-
-			<footer>
-				<p className="text-center">All images by freepik.</p>
-			</footer>
 		</div>
 	);
 }
