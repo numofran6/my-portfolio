@@ -14,12 +14,10 @@ function Header({}: Props) {
 			<header className="flex justify-between bg-[#242424] sticky top-0 z-20 lg:px-[200px] xl:px-[300px] sm:px-16 px-5">
 				<motion.div
 					initial={{
-						x: 300,
 						opacity: 0,
 						scale: 0.5,
 					}}
 					animate={{
-						x: 0,
 						opacity: 1,
 						scale: 1,
 					}}
@@ -46,12 +44,10 @@ function Header({}: Props) {
 
 				<motion.div
 					initial={{
-						x: -300,
 						opacity: 0,
 						scale: 0.5,
 					}}
 					animate={{
-						x: 0,
 						opacity: 1,
 						scale: 1,
 					}}
