@@ -47,12 +47,12 @@ function Hero({}: Props) {
 							Software Engineer
 						</h1>
 
-						<div className="lg:text-3xl text-2xl font-semibold m-3 flex justify-center items-center">
+						<div className="lg:text-3xl text-2xl font-semibold m-3 flex justify-center items-center mb-3 sm:mb-0">
 							<span className="text-white">{text}</span>
 							<Cursor cursorColor="#ce8e04" />
 						</div>
 
-						<div className="z-10 mt-3 sm:mt-0 flex flex-col items-center text-2xl lg:mt-10 lg:space-y-2">
+						<div className="z-10 flex flex-col items-center text-2xl lg:mt-10 lg:space-y-2">
 							<Link href="/projects">
 								<button className="heroButton">Projects</button>
 							</Link>
