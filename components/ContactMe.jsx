@@ -61,7 +61,7 @@ function ContactMe() {
 
 						<div className="flex space-x-5 items-center">
 							<GrMail className="w-7 h-7 text-[#ce8e04]" />
-							<p>numofrancis@gmail.com</p>
+							<p>numofran6@gmail.com</p>
 						</div>
 					</div>
 
