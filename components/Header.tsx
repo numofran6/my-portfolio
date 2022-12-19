@@ -58,14 +58,14 @@ function Header({}: Props) {
 				>
 					<Link
 						href={asPath === '/' ? '#contact-me' : '/#contact-me'}
-						className="mr-4 sm:mr-2"
+						className="mr-1 sm:mr-2"
 					>
-						<GrMail className="w-7 h-7 hover:text-[#ce8e04] active:text-gray-400" />
+						<GrMail className="w-5 h-5 sm:w-7 sm:h-7 hover:text-[#ce8e04] active:text-gray-400" />
 					</Link>
 
 					<Link
 						href={asPath === '/' ? '#contact-me' : '/#contact-me'}
-						className="uppercase text-gray-400 hidden sm:inline-flex mr-4 hover:text-[#ce8e04] active:text-gray-400"
+						className="uppercase text-gray-400 mr-4 font-bold text-sm hover:text-[#ce8e04] active:text-gray-400"
 					>
 						Hire Me
 					</Link>
