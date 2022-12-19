@@ -4,7 +4,11 @@
 
 @layer components {
 	.heroButton {
-		@apply text-gray-400 tracking-widest uppercase m-1.5 block transition-all ease-in-out duration-300 hover:scale-150 active:text-gray-100 hover:text-[#ce8e04];
+		@apply text-[#ce8e04] md:tracking-widest uppercase m-1.5 block transition-all ease-in-out duration-300 hover:scale-125 hover:text-gray-300 md:bg-transparent md:text-xl md:p-0 active:text-[#ce8e04] md:font-normal md:border-none;
+	}
+
+	.heroButtonMobile {
+		@apply text-gray-900 uppercase bg-[#ce8e04] px-2 py-2 font-bold tracking-wide text-xs rounded-full transition-all ease-in-out duration-300 active:scale-75;
 	}
 
 	.head {

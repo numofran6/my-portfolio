@@ -1,4 +1,3 @@
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -6,16 +5,6 @@ import { motion } from 'framer-motion';
 type Props = {};
 
 function Hero({}: Props) {
-	const [text, count] = useTypewriter({
-		words: [
-			'Hi, the name is Francis Numo',
-			'Front-End Developer',
-			'React, Next.js, Redux, Typescript...',
-		],
-		loop: true,
-		delaySpeed: 5000,
-	});
-
 	return (
 		<div>
 			<motion.div
@@ -24,45 +13,34 @@ function Hero({}: Props) {
 				transition={{ duration: 1 }}
 				className="h-screen grid lg:grid-cols-2"
 			>
-				<div className="flex flex-col space-y-5 items-center mt-10 sm:mt-16 lg:mt-0 justify-center">
-					<h3 className="uppercase lg:hidden tracking-[20px] font-bold text-gray-400 text-2xl">
-						HOME
-					</h3>
+				<div className="flex flex-col space-y-3 items-center mt-24 lg:mt-0 justify-center">
+					<h1 className="uppercase text-center font-bold text-2xl tracking-[5px] text-gray-400 md:hidden">
+						My Portfolio
+					</h1>
 
 					<div className="">
-						<Image
-							src={'/software.jpg'}
-							alt={'NUMO FRANCIS'}
-							width={2084}
-							height={2084}
-							className="rounded-full w-48 h-48 object-cover mx-auto lg:hidden"
-							priority
-						/>
-
-						<h1 className="uppercase text-center font-bold text-2xl lg:text-6xl tracking-[5px] px-10 text-gray-300 lg:text-white hidden sm:block">
-							My Portfolio
-						</h1>
-
-						<h1 className="uppercase sm:tracking-[15px] tracking-[10px] text-[#ce8e04] px-10 mt-5 text-center">
-							Software Engineer
-						</h1>
-
-						<div className="lg:text-3xl text-2xl font-semibold m-3 flex justify-center items-center">
-							<span className="text-white">{text}</span>
-							<Cursor cursorColor="#ce8e04" />
+						<div className="text-white p-5 md:px-28 mt-10 mb-5 md:m-0 text-center space-y-1 ">
+							<p className="text-[#ce8e04] uppercase">Hi there! I'm</p>
+							<p className="text-5xl font-bold">Francis Numo</p>
+							<p className="text-gray-300">
+								A Front-End Developer who specializes in building elegant user
+								interface with the aim to create exceptional digital experience
+							</p>
 						</div>
 
-						<div className="z-10 flex flex-col items-center text-2xl lg:mt-10 lg:space-y-2">
+						<div className="z-10 flex justify-center md:flex-col items-center text-xl md:space-x-0 lg:mt-3 lg:space-y-2">
 							<Link href="/projects">
-								<button className="heroButton">Projects</button>
+								<button className="heroButtonMobile md:heroButton">
+									My Projects
+								</button>
 							</Link>
-							<Link href="#contact-me">
+							<Link href="#contact-me" className="hidden md:inline-flex">
 								<button className="heroButton">Contact Me</button>
 							</Link>
-							<Link href="#skills">
+							<Link href="#skills" className="hidden md:inline-flex">
 								<button className="heroButton">Skills</button>
 							</Link>
-							<Link href="#about-me">
+							<Link href="#about-me" className="hidden md:inline-flex">
 								<button className="heroButton">About Me</button>
 							</Link>
 						</div>
