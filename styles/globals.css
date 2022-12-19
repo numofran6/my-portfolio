@@ -12,7 +12,7 @@
 	}
 
 	.head {
-		@apply absolute top-20 uppercase tracking-[20px] text-gray-400 text-2xl font-bold;
+		@apply absolute top-32 uppercase tracking-[0.3rem] text-gray-400 text-2xl font-bold;
 	}
 
 	.pagelayout {

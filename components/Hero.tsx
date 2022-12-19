@@ -14,12 +14,12 @@ function Hero({}: Props) {
 				className="h-screen grid lg:grid-cols-2"
 			>
 				<div className="flex flex-col space-y-3 items-center mt-24 lg:mt-0 justify-center">
-					<h1 className="uppercase text-center font-bold text-2xl tracking-[5px] text-gray-400 md:hidden">
+					<h1 className="uppercase text-center font-bold text-2xl tracking-[0.3rem] text-gray-400 md:hidden">
 						My Portfolio
 					</h1>
 
 					<div className="">
-						<div className="text-white p-5 md:px-28 mt-10 mb-5 md:m-0 text-center space-y-1 ">
+						<div className="text-white p-5 md:px-28 mt-10 mb-5 md:m-0 text-center md:text-left space-y-1 ">
 							<p className="text-[#ce8e04] uppercase">Hi there! I'm</p>
 							<p className="text-5xl font-bold">Francis Numo</p>
 							<p className="text-gray-300">

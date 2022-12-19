@@ -46,20 +46,20 @@ function ContactMe() {
 					autoClose={3000}
 					pauseOnFocusLoss={false}
 				/>
-				<h3 className="head tracking-widest">Contact Me</h3>
+				<h3 className="head tracking-widest top-24">Contact Me</h3>
 
-				<div className="flex flex-col space-y-5 sm:space-y-10 absolute top-36">
-					<h4 className="text-center font-semibold text-3xl sm:text-5xl md:text-6xl mb-3 text-[#ce8e04]">
-						Lets Talk. Lets Collaborate
+				<div className="flex flex-col space-y-8 sm:space-y-10 absolute top-36">
+					<h4 className="text-center font-semibold text-3xl sm:text-5xl md:text-6xl my-3 text-[#ce8e04]">
+						Hire Me. Lets Collaborate
 					</h4>
 
-					<div className="space-y-5">
-						<div className="flex space-x-5 items-center">
+					<div className="space-y-3">
+						<div className="flex space-x-3 items-center">
 							<BsPhone className="w-7 h-7 text-[#ce8e04]" />
 							<p>+233 50 238 5080</p>
 						</div>
 
-						<div className="flex space-x-5 items-center">
+						<div className="flex space-x-3 items-center">
 							<GrMail className="w-7 h-7 text-[#ce8e04]" />
 							<p>numofran6@gmail.com</p>
 						</div>
@@ -88,7 +88,11 @@ function ContactMe() {
 							/>
 						</div>
 
-						<select name="topic" required className="contactInput">
+						<select
+							name="topic"
+							required
+							className="contactInput text-gray-500"
+						>
 							<option value="">Please choose to Hire / Collaborate</option>
 							<option value="Hire">Hire</option>
 							<option value="Collaborate">Collaborate</option>
@@ -109,15 +113,6 @@ function ContactMe() {
 							SUBMIT
 						</button>
 					</form>
-
-					<div className="text-left flex justify-end text-xl">
-						<Link
-							href="/projects"
-							className="uppercase text-[#ce8e04] active:text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300"
-						>
-							Check Out My Projects
-						</Link>
-					</div>
 				</div>
 			</motion.div>
 		</div>
