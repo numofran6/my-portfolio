@@ -67,7 +67,7 @@ function Header({}: Props) {
 						href={asPath === '/' ? '#contact-me' : '/#contact-me'}
 						className="uppercase text-gray-400 hidden sm:inline-flex mr-4 hover:text-[#ce8e04] active:text-gray-400"
 					>
-						Get in touch
+						Hire Me
 					</Link>
 				</motion.div>
 			</header>
