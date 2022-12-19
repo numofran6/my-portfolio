@@ -19,7 +19,7 @@ function Hero({}: Props) {
 					</h1>
 
 					<div className="">
-						<div className="text-white p-5 md:px-28 mt-10 mb-5 md:m-0 text-center md:text-left space-y-1 ">
+						<div className="text-white p-5 px-6 md:px-28 mt-10 mb-5 md:m-0 text-left md:text-left space-y-1 ">
 							<p className="text-[#ce8e04] uppercase">Hi there! I'm</p>
 							<p className="text-5xl font-bold">Francis Numo</p>
 							<p className="text-gray-300">
