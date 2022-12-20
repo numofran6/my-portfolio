@@ -11,7 +11,7 @@ function Header({}: Props) {
 
 	return (
 		<>
-			<header className="flex justify-between bg-[#242424] sticky top-0 z-20 lg:px-[200px] xl:px-[300px] sm:px-16 px-5">
+			<header className="flex justify-between items-center bg-[#242424] sticky top-0 z-20 lg:px-[200px] xl:px-[300px] sm:px-16 px-5">
 				<motion.div
 					initial={{
 						opacity: 0,
@@ -54,20 +54,14 @@ function Header({}: Props) {
 					transition={{
 						duration: 0.8,
 					}}
-					className="flex items-center"
 				>
 					<Link
 						href={asPath === '/' ? '#contact-me' : '/#contact-me'}
-						className="mr-1 sm:mr-2"
+						className=" flex items-center mr-4 hover:text-[#ce8e04] active:text-gray-400"
 					>
-						<GrMail className="w-5 h-5 sm:w-7 sm:h-7 hover:text-[#ce8e04] active:text-gray-400" />
-					</Link>
+						<span className="uppercase font-bold text-[16px]">Hire Me</span>
 
-					<Link
-						href={asPath === '/' ? '#contact-me' : '/#contact-me'}
-						className="uppercase text-gray-400 mr-4 font-bold text-sm hover:text-[#ce8e04] active:text-gray-400"
-					>
-						Hire Me
+						<GrMail className="w-6 h-6 sm:w-7 sm:h-7 ml-1 sm:ml-2" />
 					</Link>
 				</motion.div>
 			</header>
