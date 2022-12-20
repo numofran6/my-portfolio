@@ -7,8 +7,8 @@ export default function PageNotFound() {
 			<Header />
 
 			<div className="flex flex-col items-center justify-center h-[80%] space-y-7 sm:space-y-10">
-				<h1 className="text-red-700 uppercase text-3xl md:text-6xl font-bold">
-					Page Not Found
+				<h1 className="text-red-700 uppercase text-2xl md:text-6xl font-bold">
+					404 | This page could not Found
 				</h1>
 
 				<div className="flex flex-col items-center space-y-3 sm:space-y-6">
