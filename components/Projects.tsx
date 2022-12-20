@@ -2,19 +2,31 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { data } from '../utils/data';
+import { BiArrowBack } from 'react-icons/bi';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 type Props = {};
 
 function Projects({}: Props) {
 	return (
-		<div>
+		<>
+			<div className="mb-4 mt-7 flex">
+				<Link
+					href={'/#hero'}
+					className="flex items-center space-x-2 tracking-wide font-bold active:scale-90 transition ease-in-out duration-300 text-[#ce8e04] hover:text-gray-400 ml-6 sm:ml-36 lg:ml-60"
+				>
+					<BiArrowBack />
+					<span>Go Back</span>
+				</Link>
+			</div>
+
 			<motion.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ duration: 1 }}
-				className="flex flex-col mt-10 items-center space-y-10 mx-auto max-w-full"
+				className="flex flex-col items-center space-y-5 md:space-y-8 mx-auto max-w-full"
 			>
-				<h3 className="uppercase tracking-[5px] sm:tracking-[20px] font-bold text-gray-400 text-2xl">
+				<h3 className="uppercase tracking-[0.3rem] font-bold text-gray-400 text-2xl">
 					Projects
 				</h3>
 
@@ -22,7 +34,7 @@ function Projects({}: Props) {
 					{data.map((project) => (
 						<div
 							key={project.id}
-							className="flex flex-col items-center space-y-6 flex-shrink-0 w-screen justify-center snap-center pb-10"
+							className="flex flex-col items-center space-y-6 flex-shrink-0 w-screen justify-center snap-center pb-5"
 						>
 							<a href={project.url}>
 								<Image
@@ -39,8 +51,8 @@ function Projects({}: Props) {
 									href={project.url}
 									className="hover:text-gray-400 active:text-white text-white text-2xl sm:text-4xl"
 								>
-									<span className="underline decoration-[#363636]">
-										Case Study {project.id} of {data.length}:
+									<span className="underline decoration-gray-400 text-gray-300">
+										{project.id} of {data.length}:
 									</span>{' '}
 									<span className="font-bold uppercase">{project.name}</span>
 								</a>
@@ -49,24 +61,44 @@ function Projects({}: Props) {
 									{project.stack}
 								</div>
 
-								<p className="text-sm md:text-md">{project.description}</p>
+								<div className="text-gray-300 font-semibold text-sm md:text-md text-left space-y-1 pl-5 flex flex-col">
+									<span>&bull; {project.description[0]}</span>
+									<span>&bull; {project.description[1]}</span>
+									<span>&bull; {project.description[2]}</span>
+									<span>&bull; {project.description[3]}</span>
+									<span>&bull; {project.description[4]}</span>
+									<span>&bull; {project.description[5]}</span>
+									{project.description[6] && (
+										<span>&bull; {project.description[6]}</span>
+									)}
+									{project.description[7] && (
+										<span>&bull; {project.description[7]}</span>
+									)}
+								</div>
+
+								<div className="flex space-x-10 justify-end px-5 text-white uppercase">
+									<a
+										href={project.url}
+										className="flex items-center hover:text-[#ce8e04] active:scale-90 transition duration-300 ease-in-out"
+									>
+										Live Site <BsFillArrowRightCircleFill className="ml-2" />
+									</a>
+
+									<a
+										href={project.github}
+										className="flex items-center hover:text-[#ce8e04] active:scale-90 transition duration-300 ease-in-out"
+									>
+										Github <BsFillArrowRightCircleFill className="ml-2" />
+									</a>
+								</div>
 							</div>
 						</div>
 					))}
 				</div>
 
-				<Link
-					href={'/#hero'}
-					className="tracking-widest font-bold hover:bg-[#ce8e04] transition ease-in-out duration-300 px-3 py-0.5 rounded-full text-[#ce8e04] hover:text-gray-800 border-2 border-[#ce8e04] active:bg-gray-800 active:text-[#ce8e04]"
-				>
-					HOME
-				</Link>
-
 				<div className="w-full absolute top-[30%] bg-[#ce8e04]/10 h-[300px] left-0 -skew-y-12 z-0" />
-
-				{/* <div className="w-full absolute top-[30%] bg-[#ce8e04]/10 h-[300px] right-0 skew-y-12 z-0" /> */}
 			</motion.div>
-		</div>
+		</>
 	);
 }
 
