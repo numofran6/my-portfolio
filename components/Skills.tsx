@@ -98,12 +98,14 @@ function Skills({}: Props) {
 						/>
 					</div>
 
-					<Link
-						href="/projects"
-						className="uppercase text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300 active:text-[#ce8e04] flex justify-end text-xl px-5 md:px-0"
-					>
-						My Projects
-					</Link>
+					<div className="flex justify-end px-5 md:px-0">
+						<Link
+							href="/projects"
+							className="uppercase text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300 active:text-[#ce8e04] text-xl"
+						>
+							My Projects
+						</Link>
+					</div>
 				</div>
 			</motion.div>
 		</div>
