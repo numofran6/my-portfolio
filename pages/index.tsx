@@ -7,7 +7,7 @@ import ContactMe from '../components/ContactMe';
 
 export default function Home() {
 	return (
-		<div className="h-screen bg-[rgb(36,36,36)] text-gray-400 z-0 snap-y snap-mandatory overflow-scroll scrollbar-thin scrollbar-track-[rgb(36,36,36)] scrollbar-thumb-[#ce8e04]/80">
+		<>
 			<Head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -67,23 +67,25 @@ export default function Home() {
 				<title>My Portfolio</title>
 			</Head>
 
-			<Header />
+			<div className="h-screen bg-[rgb(36,36,36)] text-gray-400 z-0 snap-y snap-mandatory overflow-scroll scrollbar-thin scrollbar-track-[rgb(36,36,36)] scrollbar-thumb-[#ce8e04]/80">
+				<Header />
 
-			<section id="hero" className="snap-start">
-				<Hero />
-			</section>
+				<section id="hero" className="snap-start">
+					<Hero />
+				</section>
 
-			<section id="about-me" className="snap-center">
-				<About />
-			</section>
+				<section id="about-me" className="snap-center">
+					<About />
+				</section>
 
-			<section id="skills" className="snap-center">
-				<Skills />
-			</section>
+				<section id="skills" className="snap-center">
+					<Skills />
+				</section>
 
-			<section id="contact-me" className="snap-center">
-				<ContactMe />
-			</section>
-		</div>
+				<section id="contact-me" className="snap-center">
+					<ContactMe />
+				</section>
+			</div>
+		</>
 	);
 }
