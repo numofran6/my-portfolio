@@ -8,10 +8,6 @@ import ContactMe from '../components/ContactMe';
 export default function Home() {
 	return (
 		<div className="h-screen bg-[rgb(36,36,36)] text-gray-400 z-0 snap-y snap-mandatory overflow-scroll scrollbar-thin scrollbar-track-[rgb(36,36,36)] scrollbar-thumb-[#ce8e04]/80">
-			<Head>
-				<title>My Portfolio</title>
-			</Head>
-
 			<Header />
 
 			<section id="hero" className="snap-start">
