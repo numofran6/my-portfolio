@@ -27,10 +27,7 @@ export default function Home() {
 					property="og:description"
 					content="A Front-End Developer who specializes in building elegant user interface with the aim to create exceptional digital experience"
 				/>
-				<meta
-					property="og:image"
-					content="https://numoportfolio.vercel.app/public/developer.png"
-				/>
+				<meta property="og:image" content="../public/developer.png" />
 
 				<meta property="og:image:alt" content="Francis Numo" />
 				<meta property="og:locale" content="en_GB" />
@@ -43,6 +40,29 @@ export default function Home() {
 				<meta name="twitter:card" content="summary" />
 				<meta name="theme-color" content="#000000" />
 				<meta name="robots" content="index, follow" />
+
+				<meta
+					property="og:title"
+					name="twitter:tittle"
+					itemProp="name"
+					content="Francis Numo - Frontend Developer"
+				/>
+				<meta property="og:site_name" content="Developer Portfolio" />
+				<meta
+					property="og:description"
+					name="twitter:description"
+					itemProp="description"
+					content="A Front-End Developer who specializes in building elegant user interface with the aim to create exceptional digital experience"
+				/>
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:image"
+					name="twitter:image:src"
+					itemProp="image"
+					content="../public/developer.png"
+				/>
+				<meta property="og:image:width" content="300" />
+				<meta property="og:image:height" content="300" />
 
 				<title>My Portfolio</title>
 			</Head>
