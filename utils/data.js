@@ -26,11 +26,11 @@ export const data = [
 			'React | Firebase | SASS | Styled Components | React Hooks | React Router DOM',
 		description: [
 			'React.JS to build single-page application',
-			'Firebase Datastore was used for Database',
+			'Firebase Data-store was used for Database',
 			'Authentication functionality handled by Firebase',
 			'SASS and Styled Components for styling UI',
 			'React Router DOM to handle routing and protected pages',
-			'Realtime Chatting possible even witout a web socket because of amazing Firebase functionalities',
+			'Real-time Chatting possible even without a web socket because of amazing Firebase functionalities',
 		],
 		url: 'https://kasachat.vercel.app/',
 		github: 'https://github.com/numofran6/kasa',

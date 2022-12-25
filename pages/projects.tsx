@@ -7,7 +7,7 @@ type Props = {};
 function projects({}: Props) {
 	return (
 		<>
-			<div className="pb-10 h-screen bg-[rgb(36,36,36)] text-gray-400 overflow-auto sm:scrollbar-thin scrollbar-track-gray-500/10 scrollbar-thumb-gray-800">
+			<div className="pb-10 h-screen bg-[rgb(36,36,36)] text-gray-400 overflow-auto sm:scrollbar-thin scrollbar-track-gray-500/10 scrollbar-thumb-gray-500">
 				<Head>
 					<title>My Projects</title>
 				</Head>
