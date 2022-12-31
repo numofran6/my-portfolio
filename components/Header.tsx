@@ -36,7 +36,7 @@ function Header({}: Props) {
 						bgColor="transparent"
 					/>
 					<SocialIcon
-						url="https://twitter.com/numofran6"
+						url="https://twitter.com/numofree"
 						fgColor="#ce8e04"
 						bgColor="transparent"
 					/>
