@@ -13,9 +13,9 @@ function About({}: Props) {
 				className=" h-screen flex flex-col text-center sm:text-left max-w-7xl px-10 items-center justify-center md:mx-auto"
 			>
 				<motion.h3
-					initial={{ opacity: 0, y: 80 }}
+					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 1 }}
+					transition={{ duration: 1.2 }}
 					className="uppercase tracking-[0.3rem] text-gray-400 text-2xl font-bold sm:mb-20"
 				>
 					About Me

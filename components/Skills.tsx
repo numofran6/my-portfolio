@@ -14,15 +14,20 @@ function Skills({}: Props) {
 				className="min-h-screen relative flex flex-col items-center justify-center text-center max-w-[2000px] lg:px-10 space-y-3 mx-auto"
 			>
 				<motion.h3
-					initial={{ opacity: 0, y: 40 }}
+					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 1 }}
+					transition={{ duration: 1.2 }}
 					className="head"
 				>
 					Skills
 				</motion.h3>
 
-				<div className="absolute top-40 space-y-16 md:space-y-12">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="absolute top-40 space-y-16 md:space-y-12"
+				>
 					<h4 className="tracking-widest text-center text-white">
 						Some of the technologies I work with
 					</h4>
@@ -113,7 +118,7 @@ function Skills({}: Props) {
 							My Projects
 						</Link>
 					</div>
-				</div>
+				</motion.div>
 			</motion.div>
 		</div>
 	);

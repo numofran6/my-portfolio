@@ -71,7 +71,7 @@ function Projects({}: Props) {
 								</div>
 
 								<motion.div
-									initial={{ opacity: 0, x: 50 }}
+									initial={{ opacity: 0, x: 20 }}
 									whileInView={{ opacity: 1, x: 0 }}
 									transition={{ duration: 1 }}
 									className="text-gray-300 font-semibold text-sm md:text-md text-left space-y-1 pl-5 flex flex-col"

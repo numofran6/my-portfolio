@@ -49,7 +49,7 @@ export const data = [
 	},
 	{
 		id: 4,
-		name: 'Cisco Virtual Experience Program',
+		name: 'Cisco Virtual Internship',
 		image: '/sextant.png',
 		stack: 'React.js | Node.js | Web Sockets | Styled Components | React Hooks',
 		description: [

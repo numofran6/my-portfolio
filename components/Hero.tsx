@@ -14,14 +14,9 @@ function Hero({}: Props) {
 				className="h-screen grid lg:grid-cols-2"
 			>
 				<div className="flex flex-col space-y-3 items-center mt-24 lg:mt-0 justify-center">
-					<motion.h1
-						initial={{ opacity: 0, y: -50 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ duration: 1 }}
-						className="uppercase text-center font-bold text-2xl tracking-[0.3rem] text-gray-400 md:hidden"
-					>
+					<h1 className="uppercase text-center font-bold text-2xl tracking-[0.3rem] text-gray-400 md:hidden">
 						My Portfolio
-					</motion.h1>
+					</h1>
 
 					<div className="">
 						<div className="text-white p-5 px-6 md:px-28 mt-10 mb-5 md:m-0 text-left md:text-left space-y-1 ">

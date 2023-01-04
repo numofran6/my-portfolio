@@ -11,8 +11,8 @@ function SkillsCard({ directionLeft, skillsvg, name }: Props) {
 	return (
 		<>
 			<motion.div
-				initial={{ opacity: 0, y: directionLeft ? 100 : -100 }}
-				whileInView={{ opacity: 1, y: 0 }}
+				initial={{ opacity: 0, x: directionLeft ? 50 : -50 }}
+				whileInView={{ opacity: 1, x: 0 }}
 				transition={{ duration: 1 }}
 			>
 				<div className="flex items-center space-x-3">
