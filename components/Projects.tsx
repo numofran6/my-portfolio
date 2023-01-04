@@ -42,7 +42,7 @@ function Projects({}: Props) {
 									alt={project.name}
 									width={2000}
 									height={1000}
-									className="h-[150px] w-[300px] rounded hover:opacity-70 active:opacity-100 object-cover"
+									className="h-[150px] w-[300px] bg-gray-500 rounded hover:opacity-70 active:opacity-100 object-cover"
 								/>
 							</a>
 
