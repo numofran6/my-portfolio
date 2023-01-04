@@ -11,7 +11,7 @@ function Header({}: Props) {
 
 	return (
 		<>
-			<header className="flex justify-between items-center bg-[#242424] sticky top-0 z-20 lg:px-[200px] xl:px-[300px] sm:px-16 px-5">
+			<header className="flex justify-between items-center bg-[#242424] sticky top-0 z-20 lg:px-[200px] xl:px-[300px] sm:px-16 px-5 shadow-md">
 				<motion.div
 					initial={{
 						opacity: 0,

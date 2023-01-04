@@ -30,18 +30,18 @@ function Projects({}: Props) {
 					Projects
 				</h3>
 
-				<div className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#ce8e04]/50 snap-x snap-mandatory z-20">
+				<div className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#ce8e04]/50 snap-x snap-mandatory z-10 relative">
 					{data.map((project) => (
 						<div
 							key={project.id}
-							className="flex flex-col items-center space-y-6 flex-shrink-0 w-screen justify-center snap-center pb-5"
+							className="flex flex-col items-center space-y-6 flex-shrink-0 w-screen justify-center snap-center pb-5 z-20"
 						>
 							<a href={project.url}>
 								<Image
 									src={project.image}
 									alt={project.name}
-									width={3000}
-									height={2000}
+									width={2000}
+									height={1000}
 									className="h-[150px] w-[300px] rounded hover:opacity-70 active:opacity-100 object-cover"
 								/>
 							</a>
@@ -62,12 +62,24 @@ function Projects({}: Props) {
 								</div>
 
 								<div className="text-gray-300 font-semibold text-sm md:text-md text-left space-y-1 pl-5 flex flex-col">
-									<span>&bull; {project.description[0]}</span>
-									<span>&bull; {project.description[1]}</span>
-									<span>&bull; {project.description[2]}</span>
-									<span>&bull; {project.description[3]}</span>
-									<span>&bull; {project.description[4]}</span>
-									<span>&bull; {project.description[5]}</span>
+									{project.description[0] && (
+										<span>&bull; {project.description[0]}</span>
+									)}
+									{project.description[1] && (
+										<span>&bull; {project.description[1]}</span>
+									)}
+									{project.description[2] && (
+										<span>&bull; {project.description[2]}</span>
+									)}
+									{project.description[3] && (
+										<span>&bull; {project.description[3]}</span>
+									)}
+									{project.description[4] && (
+										<span>&bull; {project.description[4]}</span>
+									)}
+									{project.description[5] && (
+										<span>&bull; {project.description[5]}</span>
+									)}
 									{project.description[6] && (
 										<span>&bull; {project.description[6]}</span>
 									)}
@@ -96,7 +108,7 @@ function Projects({}: Props) {
 					))}
 				</div>
 
-				<div className="w-full absolute top-[30%] bg-[#ce8e04]/10 h-[300px] left-0 -skew-y-12 z-0" />
+				<div className="w-full  absolute sm:top-[30%] top-[50%] bg-[#ce8e04]/5 h-[300px] left-0 -skew-y-12 z-0" />
 			</motion.div>
 		</>
 	);

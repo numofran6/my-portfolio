@@ -2,7 +2,7 @@ export const data = [
 	{
 		id: 1,
 		name: 'E-Commerce App',
-		image: '/ecommerce.jpg',
+		image: '/ecommerce1.png',
 		stack:
 			'Next.JS | MongoDB | Context API | Next-Auth | JS-Cookie | Bcrypt | React Hooks | TailwindCSS',
 		description: [
@@ -21,7 +21,7 @@ export const data = [
 	{
 		id: 2,
 		name: 'Realtime Chat App',
-		image: '/chat.jpg',
+		image: '/chat1.png',
 		stack:
 			'React | Firebase | SASS | Styled Components | React Hooks | React Router DOM',
 		description: [
@@ -34,5 +34,32 @@ export const data = [
 		],
 		url: 'https://kasachat.vercel.app/',
 		github: 'https://github.com/numofran6/kasa',
+	},
+	{
+		id: 3,
+		name: 'Church App',
+		image: '/church.png',
+		stack: 'Next.js | TailwindCSS | Styled Components | React Hooks',
+		description: [
+			'Next.js to build single-page application',
+			'TailwindCSS and Styled Components for styling UI',
+		],
+		url: 'https://glorioushill.vercel.app/',
+		github: 'https://github.com/numofran6/church-website',
+	},
+	{
+		id: 4,
+		name: 'Sextant: Cisco Virtual Internship',
+		image: '/sextant.png',
+		stack: 'React.js | Node.js | Web Sockets | Styled Components | React Hooks',
+		description: [
+			'React.js to build single-page application',
+			'Node.js to build backend server',
+			'Styled Components for styling UI',
+			'Web Sockets to establish open two-way communication to the Node server',
+			'ipify API to retrieve and display public IP',
+		],
+		url: 'https://numofran6.github.io/cisco-starter-repo/',
+		github: 'https://github.com/numofran6/cisco-starter-repo',
 	},
 ];
