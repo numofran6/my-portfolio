@@ -10,17 +10,29 @@ function Hero({}: Props) {
 			<motion.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
+				transition={{ duration: 1.2 }}
 				className="h-screen grid lg:grid-cols-2"
 			>
 				<div className="flex flex-col space-y-3 items-center mt-24 lg:mt-0 justify-center">
-					<h1 className="uppercase text-center font-bold text-2xl tracking-[0.3rem] text-gray-400 md:hidden">
+					<motion.h1
+						initial={{ opacity: 0, y: -50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ duration: 1 }}
+						className="uppercase text-center font-bold text-2xl tracking-[0.3rem] text-gray-400 md:hidden"
+					>
 						My Portfolio
-					</h1>
+					</motion.h1>
 
 					<div className="">
 						<div className="text-white p-5 px-6 md:px-28 mt-10 mb-5 md:m-0 text-left md:text-left space-y-1 ">
-							<p className="text-[#ce8e04] uppercase">Hi there! I'm</p>
+							<motion.p
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{ duration: 1 }}
+								className="text-[#ce8e04] uppercase"
+							>
+								Hi there, I'm
+							</motion.p>
 							<p className="text-5xl font-bold">Francis Numo</p>
 							<p className="text-gray-300">
 								A Front-End Developer who specializes in building elegant user
@@ -28,7 +40,7 @@ function Hero({}: Props) {
 							</p>
 						</div>
 
-						<div className="z-10 flex justify-center md:flex-col items-center text-xl md:space-x-0 lg:mt-3 lg:space-y-2">
+						<div className="z-10 flex justify-center md:flex-col items-center text-xl md:space-x-0 lg:mt-3 lg:space-y-2 ">
 							<Link href="/projects">
 								<button className="heroButtonMobile md:heroButton">
 									My Projects

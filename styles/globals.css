@@ -4,11 +4,11 @@
 
 @layer components {
 	.heroButton {
-		@apply text-[#ce8e04] md:tracking-widest uppercase m-1.5 block transition-all ease-in-out duration-300 hover:scale-125 hover:text-gray-300 md:bg-transparent md:text-xl md:p-0 active:text-[#ce8e04] md:font-normal md:border-none md:leading-none;
+		@apply text-[#ce8e04] md:tracking-widest uppercase m-1.5 block transition-all ease-in-out duration-300 hover:scale-125 hover:text-gray-300 md:bg-transparent md:text-xl md:p-0 active:text-[#ce8e04] md:font-normal md:border-none md:leading-none hover:animate-none animate-pulse;
 	}
 
 	.heroButtonMobile {
-		@apply text-gray-900 uppercase bg-[#ce8e04] px-2 py-2 font-bold tracking-wide text-sm rounded-full transition-all ease-in-out duration-300 active:scale-75 leading-3;
+		@apply text-gray-900 uppercase bg-[#ce8e04] px-2 py-2 font-bold tracking-wide text-sm rounded-full transition-all ease-in-out duration-300 active:scale-75 leading-3 hover:animate-none animate-pulse;
 	}
 
 	.head {

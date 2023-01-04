@@ -10,10 +10,17 @@ function Skills({}: Props) {
 			<motion.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
+				transition={{ duration: 1.2 }}
 				className="min-h-screen relative flex flex-col items-center justify-center text-center max-w-[2000px] lg:px-10 space-y-3 mx-auto"
 			>
-				<h3 className="head">Skills</h3>
+				<motion.h3
+					initial={{ opacity: 0, y: 40 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="head"
+				>
+					Skills
+				</motion.h3>
 
 				<div className="absolute top-40 space-y-16 md:space-y-12">
 					<h4 className="tracking-widest text-center text-white">
@@ -101,7 +108,7 @@ function Skills({}: Props) {
 					<div className="flex justify-end px-5 md:px-0">
 						<Link
 							href="/projects"
-							className="uppercase text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300 active:text-[#ce8e04] text-xl"
+							className=" animate-pulse uppercase text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300 active:text-[#ce8e04] text-xl"
 						>
 							My Projects
 						</Link>

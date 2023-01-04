@@ -9,14 +9,24 @@ function About({}: Props) {
 			<motion.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
+				transition={{ duration: 1.2 }}
 				className=" h-screen flex flex-col text-center sm:text-left max-w-7xl px-10 items-center justify-center md:mx-auto"
 			>
-				<h3 className="uppercase tracking-[0.3rem] text-gray-400 text-2xl font-bold sm:mb-20">
+				<motion.h3
+					initial={{ opacity: 0, y: 80 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="uppercase tracking-[0.3rem] text-gray-400 text-2xl font-bold sm:mb-20"
+				>
 					About Me
-				</h3>
+				</motion.h3>
 
-				<div className="sm:px-6 text-justify">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="sm:px-6 text-justify"
+				>
 					<div className="space-y-5 text-gray-400 sm:space-y-5 sm:px-5">
 						<h3 className="text-xl text-center sm:text-4xl font-semibold text-[#ce8e04] uppercase">
 							Here is a little background
@@ -48,12 +58,12 @@ function About({}: Props) {
 					<div className="flex justify-end text-xl mt-8">
 						<Link
 							href="/projects"
-							className="uppercase text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300 active:text-[#ce8e04] px-1"
+							className="uppercase text-[#ce8e04] hover:text-gray-400 transition ease-out duration-300 active:text-[#ce8e04] animate-pulse px-1"
 						>
 							My Projects
 						</Link>
 					</div>
-				</div>
+				</motion.div>
 			</motion.div>
 		</>
 	);

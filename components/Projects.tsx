@@ -9,7 +9,11 @@ type Props = {};
 
 function Projects({}: Props) {
 	return (
-		<>
+		<motion.div
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1 }}
+		>
 			<div className="mb-4 mt-7 flex">
 				<Link
 					href={'/#hero'}
@@ -20,15 +24,15 @@ function Projects({}: Props) {
 				</Link>
 			</div>
 
-			<motion.div
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-				className="flex flex-col items-center space-y-5 md:space-y-8 mx-auto max-w-full"
-			>
-				<h3 className="uppercase tracking-[0.3rem] font-bold text-gray-400 text-2xl">
+			<div className="flex flex-col items-center space-y-5 md:space-y-8 mx-auto max-w-full">
+				<motion.h3
+					initial={{ opacity: 0, y: 80 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1.5 }}
+					className="uppercase tracking-[0.3rem] font-bold text-gray-400 text-2xl"
+				>
 					Projects
-				</h3>
+				</motion.h3>
 
 				<div className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#ce8e04]/50 snap-x snap-mandatory z-10 relative">
 					{data.map((project) => (
@@ -36,7 +40,12 @@ function Projects({}: Props) {
 							key={project.id}
 							className="flex flex-col items-center space-y-6 flex-shrink-0 w-screen justify-center snap-center pb-5 z-20"
 						>
-							<a href={project.url}>
+							<motion.a
+								initial={{ opacity: 0, y: 50 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								transition={{ duration: 1 }}
+								href={project.url}
+							>
 								<Image
 									src={project.image}
 									alt={project.name}
@@ -44,7 +53,7 @@ function Projects({}: Props) {
 									height={1000}
 									className="h-[150px] w-[300px] bg-gray-600 rounded hover:opacity-70 active:opacity-100 object-cover"
 								/>
-							</a>
+							</motion.a>
 
 							<div className="text-center space-y-5 max-w-6xl px-5 sm:px-10">
 								<a
@@ -61,7 +70,12 @@ function Projects({}: Props) {
 									{project.stack}
 								</div>
 
-								<div className="text-gray-300 font-semibold text-sm md:text-md text-left space-y-1 pl-5 flex flex-col">
+								<motion.div
+									initial={{ opacity: 0, x: 50 }}
+									whileInView={{ opacity: 1, x: 0 }}
+									transition={{ duration: 1 }}
+									className="text-gray-300 font-semibold text-sm md:text-md text-left space-y-1 pl-5 flex flex-col"
+								>
 									{project.description[0] && (
 										<span>&bull; {project.description[0]}</span>
 									)}
@@ -86,9 +100,9 @@ function Projects({}: Props) {
 									{project.description[7] && (
 										<span>&bull; {project.description[7]}</span>
 									)}
-								</div>
+								</motion.div>
 
-								<div className="flex space-x-10 justify-end px-5 text-white uppercase">
+								<div className="flex space-x-10 justify-end px-5 text-white uppercase hover:animate-none animate-pulse">
 									<a
 										href={project.url}
 										className="flex items-center hover:text-[#ce8e04] active:scale-90 transition duration-300 ease-in-out"
@@ -109,8 +123,8 @@ function Projects({}: Props) {
 				</div>
 
 				<div className="w-full  absolute sm:top-[30%] top-[50%] bg-[#ce8e04]/5 h-[300px] left-0 -skew-y-12 z-0" />
-			</motion.div>
-		</>
+			</div>
+		</motion.div>
 	);
 }
 

@@ -37,7 +37,7 @@ function ContactMe() {
 			<motion.div
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
+				transition={{ duration: 1.2 }}
 				className="pagelayout"
 			>
 				<ToastContainer
@@ -46,21 +46,33 @@ function ContactMe() {
 					autoClose={3000}
 					pauseOnFocusLoss={false}
 				/>
-				<h3 className="head tracking-widest top-24">Contact Me</h3>
+				<motion.h3
+					initial={{ opacity: 0, y: 80 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1 }}
+					className="head tracking-widest top-24"
+				>
+					Contact Me
+				</motion.h3>
 
-				<div className="flex flex-col space-y-8 sm:space-y-10 absolute top-36">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1.2 }}
+					className="flex flex-col space-y-8 sm:space-y-10 absolute top-36"
+				>
 					<h4 className="text-center font-semibold text-3xl sm:text-5xl md:text-6xl my-3 text-[#ce8e04]">
 						Hire Me. Lets Collaborate
 					</h4>
 
 					<div className="space-y-3">
 						<div className="flex space-x-3 items-center">
-							<BsPhone className="w-7 h-7 text-[#ce8e04]" />
+							<BsPhone className="w-7 h-7 animate-bounce text-[#ce8e04]" />
 							<p>+233 50 238 5080</p>
 						</div>
 
 						<div className="flex space-x-3 items-center">
-							<GrMail className="w-7 h-7 text-[#ce8e04]" />
+							<GrMail className="w-7 h-7 animate-bounce text-[#ce8e04]" />
 							<p>numofran6@gmail.com</p>
 						</div>
 					</div>
@@ -113,7 +125,7 @@ function ContactMe() {
 							SUBMIT
 						</button>
 					</form>
-				</div>
+				</motion.div>
 			</motion.div>
 		</div>
 	);
