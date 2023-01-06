@@ -54,7 +54,11 @@ function Hero({}: Props) {
 					</div>
 				</div>
 
-				<div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1.2 }}
+				>
 					<Image
 						src={'/developer.png'}
 						alt="Developer"
@@ -62,7 +66,7 @@ function Hero({}: Props) {
 						height={4500}
 						className="hidden lg:block w-full h-full object-cover"
 					/>
-				</div>
+				</motion.div>
 			</motion.div>
 		</div>
 	);
