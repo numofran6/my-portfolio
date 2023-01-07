@@ -32,6 +32,7 @@ function Hero({}: Props) {
 							<p className="text-gray-300">
 								A Front-End Developer who specializes in building elegant user
 								interface with the aim to create exceptional digital experience
+								for users
 							</p>
 						</div>
 
