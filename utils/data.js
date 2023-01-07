@@ -1,7 +1,7 @@
 export const data = [
 	{
 		id: 1,
-		name: 'E-Commerce App',
+		name: 'Green Shop',
 		image: '/ecommerce1.png',
 		stack:
 			'Next.JS | MongoDB | Context API | Next-Auth | JS-Cookie | Bcrypt | React Hooks | TailwindCSS',
@@ -19,7 +19,7 @@ export const data = [
 	},
 	{
 		id: 2,
-		name: 'Realtime Chat App',
+		name: 'Kasa Chat App',
 		image: '/chat1.png',
 		stack:
 			'React | Firebase | SASS | Styled Components | React Hooks | React Router DOM',
@@ -35,7 +35,7 @@ export const data = [
 	},
 	{
 		id: 3,
-		name: 'Church App',
+		name: 'Church Blog',
 		image: '/church.png',
 		stack: 'Next.js | TailwindCSS | Styled Components | React Hooks',
 		description: [
