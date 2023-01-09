@@ -30,9 +30,10 @@ function Hero({}: Props) {
 							</motion.p>
 							<p className="text-5xl font-bold">Francis Numo</p>
 							<p className="text-gray-300">
-								A Front-End Developer who specializes in building elegant user
-								interface with the aim to create exceptional digital experience
-								for users
+								A Front-End Developer whose goal is to build elegant user
+								interfaces that are engaging and intuitive, to create an
+								exceptional digital experience for users by combining
+								aesthetics, performance and functionality.
 							</p>
 						</div>
 
