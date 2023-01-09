@@ -31,9 +31,9 @@ function Hero({}: Props) {
 							<p className="text-5xl font-bold">Francis Numo</p>
 							<p className="text-gray-300">
 								A Front-End Developer whose goal is to build elegant user
-								interfaces that are engaging and intuitive, to create an
-								exceptional digital experience for users by combining
-								aesthetics, performance and functionality.
+								interfaces that are engaging and intuitive by combining
+								aesthetics, performance and functionality, to create an
+								exceptional digital experience for users.
 							</p>
 						</div>
 
